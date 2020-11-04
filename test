@@ -1,0 +1,30 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Task1_13 {
+    public static void main(String[] args) {
+        int x;
+        int h;
+        int a = -5;
+        int b = 15;
+        int y = 0;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter X : ");
+        x = input.nextInt();
+        System.out.print("Enter function step - h : ");
+        h = input.nextInt();
+        if(x > 2){
+            y = x;
+        }
+        else{
+            y = -x;
+        }
+        while(y >= a && y <= b){
+            y = y + h;
+            System.out.println(y);
+        }
+
+    }
+}
